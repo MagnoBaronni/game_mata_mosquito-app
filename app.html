@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+	<title>Jogo Mata Mosquito</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+     <script src="jogo.js"></script>
+
+</head>
+<!--Captura dos valores de redimensionamento do body-->
+<body onresize="ajusteTamanhoPalcoJogo()">
+    
+    <div class="painel">
+    	<div class="vidas">
+    		<img id="v1" src="imagens/coracao_cheio.png">
+    		<img id="v2" src="imagens/coracao_cheio.png">
+    		<img id="v3" src="imagens/coracao_cheio.png">
+    	</div>
+    	    <div class="cronometro">Tempo restante: <span id="cronometro"></span></div>  	
+        </div>
+	<script>
+    
+    // Chamada da função de execução do código a cada 1s.
+       var  clearmosquito = setInterval(function(){
+	    posicaoRandomica()}, nivelMosquito)
+		
+		document.getElementById('cronometro').innerHTML = tempo
+
+		
+		
+	</script>
+
+</body>
