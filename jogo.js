@@ -65,7 +65,7 @@ if(document.getElementById('mosquito'))
 //Contrela das vidas ao deixar os corações vazios caso não click na img a tempo.
 // e o fluxo para fim de jogo.
    if (vidas > 3) {
-	window.location.href = 'fim_de_jogo.html'
+	window.location.href = 'game_over.html'
 	
 } else{
 	document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png" 
